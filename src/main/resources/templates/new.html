@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="thymeleaf.org">
+<head>
+    <title>New Wish</title>
+    <link rel="stylesheet" th:href="newwishstyle.css"/>
+    <link href="http://fonts.cdnfonts.com/css/ibm-plex-mono" rel="stylesheet">
+
+</head>
+<body>
+
+
+<form method="post" th:action="@{/save}">
+
+    <div class="form-inner">
+        <h1>Nyt ønske</h1>
+
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Hvad ønsker du dig?"/>
+        <label for="price"></label>
+        <input type="number" id="price" name="price" placeholder="Hvad er prisen?"/>
+        <label for="link"></label>
+        <input type="text" id="link" name="link" placeholder="Hvor kan man købe det?"/>
+
+        <button type="submit">Gem</button>
+
+    </div>
+
+</form>
+
+
+</body>
+</html>
+
+
+
+
+
+

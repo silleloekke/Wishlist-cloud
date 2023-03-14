@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>My Wishlist</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" th:href="homepage.css">
+  <link href="http://fonts.cdnfonts.com/css/intro-black" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/intro" rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/ibm-plex-mono" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">
+  <div>
+    <br>
+    <br>
+    <h1>Velkommen til din egen digitale ønskeliste</h1>
+    <br>
+  </div>
+  <div>
+
+    <h2>
+
+      <button type="submit" href="/new">
+        <a th:href="@{/new}">Tilføj nyt ønske</a>
+      </button>
+
+      <br>
+      <br>
+
+
+
+    </h2>
+
+  </div>
+
+  <div>
+    <table style="width:100%">
+      <thead>
+      <tr>
+        <th>Ønske</th>
+        <th>Pris</th>
+        <th>Link</th>
+        <th>Rediger</th>
+        <th>Slet</th>
+      </tr>
+      </thead>
+
+      <tbody>
+
+      <!--PRØVE-->
+   <!--   <tr>
+        <td>Iphone</td>
+        <td>7000</td>
+        <td>Hjemmeside.dk</td>
+        <td><a th:href="@{/rediger}">Ændre</a> </td>
+        <td><a th:href="@{/slet}">Slet</a> </td>
+      </tr>-->
+      <!--PRØVE-->
+
+
+
+      <tbody>
+      <tr th:each="wish : ${wishes}">
+        <td th:text="${wish.name}"></td>
+        <td th:text="${wish.price}"></td>
+        <td><a th:href="${wish.link}" th:text="${wish.link}"></a></td>
+        <td><a th:href="@{/edit/{id}(id=${wish.id})}">Rediger</a></td>
+        <td><a th:href="@{/delete/{id}(id=${wish.id})}">Slet</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+
+</body>
+</html>

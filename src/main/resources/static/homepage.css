@@ -1,0 +1,76 @@
+
+body {
+    background: #FFC4E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+h1 {
+    color: white;
+    font-family: 'IBM Plex Mono', sans-serif;
+    text-align: center;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+form {
+    color: white;
+    font-family: 'IBM Plex Mono', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 32px;
+    margin: 1px 10px;
+
+}
+
+h2 {
+    color: white;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 35px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    /*border-bottom: 4px solid #3e4f24;
+    background: #5a7233;*/
+
+    border-bottom: 4px solid #83BD75;
+    background: #B4E197;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+button:hover {
+    background: #83BD75;
+}
+
+table, tr, th{
+    color: white;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid white;
+    text-transform: uppercase;
+}
+
+td{
+    color: white;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    border: 2px solid white;
+    text-transform: capitalize;
+}
+
+
